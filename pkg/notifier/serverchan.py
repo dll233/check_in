@@ -18,8 +18,10 @@ class Serverchan(object):
         print(f'检测到 "SERVERCHAN" 准备推送: {msg}')
 
         # //url = 'https://sctapi.ftqq.com/{}.send'.format(self.token)
+        url = 'https://api2.pushdeer.com/message/push?pushkey={}'.format(self.token)
+        url = 'https://api2.pushdeer.com/message/push?pushkey={}&text='.format(self.token)
         url = 'https://api2.pushdeer.com/{}.send'.format(self.token)
-        # print(url)
+        print(url)
 
         session = requests.Session()
 
